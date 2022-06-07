@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kantor</title>
+</head>
+<body>
+ <form id="kantor" method='POST' >    
+    <label>wybierz walute</label> 
+<select id="cokolwiek" name="cokolwiek">
+<label></label>    
+{%  for currency in currencies  %}
+<option value={{loop.index}}>{{currency}}</option>
+{% endfor %}
+</select>
+<label>podaj kwote</label>
+<input id="kwota" name="kwota">
+<input type="submit">
+</form>   
+<b>{{wynik}}</b>
+</body>
+</html>
